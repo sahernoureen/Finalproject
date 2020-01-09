@@ -1,8 +1,8 @@
 var CACHE_NAME = 'Mycache';
 var urlsToCache = [
-    '/',
-    'index.html',
-    'restaurant.html',
+    './',
+    './index.html',
+    './restaurant.html',
     '/data/',
     '/css/' ];
 
