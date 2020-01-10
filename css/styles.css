@@ -37,6 +37,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #maincontent {
   background-color: #f3f3f3;
+ 
+  width:1500px;
   min-height: 100%;
 }
 #footer {
@@ -47,13 +49,15 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  width: 1500px;
 }
 /* ====================== Navigation ====================== */
 nav {
-  width: 100%;
+  width: 1500px;
   height: 80px;
   background-color: #252831;
   text-align:center;
+
 }
 nav h1 {
   margin: auto;
@@ -136,8 +140,16 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 400px);
+  grid-row-gap: 8em;
+  grid-column-gap: 1em;
 }
 #restaurants-list li {
+  width: 100%;
+ 
+
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
@@ -195,7 +207,7 @@ nav h1 a {
   position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
+  width: 100%;
 }
 .inside #map {
   background-color: #ccc;
@@ -205,7 +217,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: 100%;
 }
 #restaurant-name {
   color: #f18200;
@@ -272,4 +284,9 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+
+@media only screen and (min-width: 375px) {
+ 
 }
