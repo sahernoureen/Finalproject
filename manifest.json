@@ -3,12 +3,12 @@
     "name": "Resturant app",
     "icons": [
       {
-        "src": "./img/icon1.png",
+        "src": "/img/icon1.png",
         "type": "image/png",
         "sizes": "256x256"
       }
     ],
-    "start_url": "./?source=pwa",
+    "start_url": "/?source=pwa",
     "background_color": "#3367D6",
     "display": "standalone",
     "scope": "/",
