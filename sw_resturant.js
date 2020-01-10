@@ -5,6 +5,7 @@ var urlsToCache = [
     './restaurant.html',
     '/data/',
     '/css/',
+    '/img/',
   './manifest.json' ];
 
 self.addEventListener('install', function(event) {
