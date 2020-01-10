@@ -9,7 +9,7 @@ class DBHelper {
    */
   static get DATABASE_URL() {
     const port = 5500// Change this to your server port
-  // return `http://localhost:${port}/data/restaurants.json`;
+   //return `http://localhost:${port}/data/restaurants.json`;
    return `https://sahernoureen.github.io/Finalproject/data/restaurants.json`;
   }
 
@@ -151,13 +151,13 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-  return (`./img/${restaurant.photograph}`); //for git hub
-  //return (`/img/${restaurant.photograph}`); //for local host
+    return (`./img/${restaurant.photograph}`); //for git hub
+ // return (`/img/${restaurant.photograph}`);
+  }
 
   /**
    * Map marker for a restaurant.
    */
-
    static mapMarkerForRestaurant(restaurant, map) {
     // https://leafletjs.com/reference-1.3.0.html#marker  
     const marker = new L.marker([restaurant.latlng.lat, restaurant.latlng.lng],
