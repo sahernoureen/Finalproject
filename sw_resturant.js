@@ -4,7 +4,8 @@ var urlsToCache = [
     './index.html',
     './restaurant.html',
     '/data/',
-    '/css/' ];
+    '/css/',
+  './manifest.json' ];
 
 self.addEventListener('install', function(event) {
     // install stage

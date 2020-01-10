@@ -11,7 +11,7 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
   position:relative;
-  width : 1300px;
+  width : 1500px;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +39,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
-  width: 1500px;
+
   max-width: 100%;
 }
 #footer {
@@ -141,13 +141,13 @@ nav h1 a {
   padding: 30px 15px 60px;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(auto-fill, 400px);
   grid-row-gap: 8em;
   grid-column-gap: 1em;
 }
 #restaurants-list li {
-  width: 100%;
+ 
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
@@ -287,15 +287,45 @@ nav h1 a {
 }
 
 
-@media only screen and (min-width: 365px) {
-  #reviews-list li {
-    max-width: 70%;
+@media only screen and (min-width: 600px){
+
+  #restaurants-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, 400px);
+  grid-row-gap: 8em;
+  grid-column-gap: 2em;
   }
- 
+  #restaurants-list li {
+    width: 60%;
+  }
 }
 
-@media only screen and (min-width: 560px) {
-  #reviews-list li {
-    max-width: 78%;
+@media screen and (min-width: 992px) {
+
+  #restaurants-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 400px);
+  grid-row-gap: 8em;
+  grid-column-gap: 2em;
+  }
+  #restaurants-list li {
+    width: 70%;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  #restaurants-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, 400px);
+  grid-row-gap: 8em;
+  grid-column-gap: 2em;
+  }
+  #restaurants-list li {
+    width: 80%;
   }
 }
